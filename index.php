@@ -8,9 +8,7 @@ include_once'_classes/Authors.php';
 include_once'_classes/Categories.php'; 
 include_once'_classes/Articles.php'; 
 
-$var = new Authors($id2);
-debug($var);
-exit;
+
 
 //CREATION DU POINT D'ACCES
 
