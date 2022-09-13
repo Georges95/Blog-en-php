@@ -5,14 +5,13 @@
 // --------------------------- //
 
 //!\\ A enlever lors du déploiement
-error_reporting(E_ERROR | E_PARSE);
+error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 
 // --------------------------- //
 //          SESSIONS           //
 // --------------------------- //
-
 
 ini_set('session.cookie_lifetime', false);
 session_start();
@@ -30,7 +29,7 @@ define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers et
 define("WEBSITE_TITLE", "Mon site");
 define("WEBSITE_NAME", "Mon site");
 define("WEBSITE_URL", "https://monsite.com");
-define("WEBSITE_DESCRIPTION", "Description du site");
+define("WEBSITE_DESCRIPTION", "T");
 define("WEBSITE_KEYWORDS", "");
 define("WEBSITE_LANGUAGE", "");
 define("WEBSITE_AUTHOR", "");
@@ -47,5 +46,3 @@ define("DATABASE_HOST", "localhost");
 define("DATABASE_NAME", "test");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD", "");
-
-

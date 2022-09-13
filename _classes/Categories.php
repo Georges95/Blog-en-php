@@ -1,33 +1,44 @@
-<?php  
+<?php
 
-class Categories{
+class Categories
+{
+
     public $id;
     public $name;
-    
 
-        function __construct($id){
+
+    /**
+     * Categories constructor.
+     * @param $id
+     */
+    function __construct($id) {
+
         global $db;
+
         $id = str_secur($id);
+
         $reqCategory = $db->prepare('SELECT * FROM categories WHERE id = ?');
         $reqCategory->execute([$id]);
         $data = $reqCategory->fetch();
 
-        $this->id =$id;
-        $this->name = $data['firstname'];
-        
-        }
-    
-        
-    
+        $this->id = $id;
+        $this->name = $data['name'];
 
-    //Ici on envoie tout les categories
+    }
 
-    static function getAllCategories(){
+
+    /**
+     * Envoie de toutes les catégories
+     * @return array
+     */
+    static function getAllCategories() {
+
         global $db;
 
         $reqCategories = $db->prepare('SELECT * FROM categories');
-        $reqCategories ->execute([]);
+        $reqCategories->execute([]);
         return $reqCategories->fetchAll();
 
     }
+
 }

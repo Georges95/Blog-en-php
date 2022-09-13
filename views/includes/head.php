@@ -2,14 +2,24 @@
 <meta charset="UTF-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
+<meta name="author" content="<?= WEBSITE_AUTHOR?>">
+<meta name="description" content="<?= WEBSITE_DESCRIPTION?>" />
+<meta name=”keywords” content="<?= WEBSITE_KEYWORDS?>"/>
+<meta name="Reply-to" content="<?= WEBSITE_AUTHOR_MAIL?>">
+<meta name="Copyright" content="<?= WEBSITE_AUTHOR?>">
+<meta name="Language" content="<?= WEBSITE_LANGUAGE?>">
+
+<!-- Open Graph tags -->
+<meta property="og:type"              content="website" />
+<meta property="og:url"               content="<?= WEBSITE_FACEBOOK_URL?>" />
+<meta property="og:title"             content="<?= WEBSITE_FACEBOOK_NAME?>" />
+<meta property="og:description"       content="<?= WEBSITE_FACEBOOK_DESCRIPTION?>" />
+<meta property="og:image"             content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
 
 <!-- CSS Styles -->
-
-<!-- CSS only -->
-<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles/css/bootstrap.css"/>
 <link rel="stylesheet" href="assets/styles/css/styles.css"/>
 
 
 <!-- JS Files -->
-<!--script src="/assets/js/app.js"></script-->
